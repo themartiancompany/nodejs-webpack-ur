@@ -69,7 +69,7 @@ if [[ ! -v "_docs" ]]; then
     _docs="false"
   fi
 fi
-if [[ ! -v "${_archive_format}" ]]; then
+if [[ ! -v "_archive_format" ]]; then
   if [[ "${_npm}" == "true" ]]; then
     _archive_format="tgz"
   elif [[ "${_npm}" == "false" ]]; then
