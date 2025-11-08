@@ -265,7 +265,7 @@ package_nodejs-webpack() {
     _find_opts=()
   _npm_options=(
     -g 
-    --cache
+    # --cache
     # --user 
     #   root 
     --prefix 
@@ -283,7 +283,7 @@ package_nodejs-webpack() {
   npm \
     install \
     "${_npm_options[@]}" \
-    "${srcdir}/${_ns}-${_pkg}-${pkgver}.tgz"
+    "${srcdir}/${_pkg}-${pkgver}.tgz"
   rm \
     -fr \
       "${pkgdir}/usr/etc"
